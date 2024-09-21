@@ -1,13 +1,64 @@
 ---
-title: Hiroshima
-description: 広島愛
-date: "2023-10-07"
-url: https://test.com
+title: How to Build a Simple Web Application with Next.js
+description: A step-by-step guide to create a basic web application using Next.js
+date: "2024-09-22"
+url: https://example.com
 published: true
-repository: vlonteer-network/test-post
+repository: your-repo/web-app-guide
 ---
 
+# How to Build a Simple Web Application with Next.js
 
-[![](https://i.imgur.com/9QgutCw.jpeg)](https://i.imgur.com/9QgutCw.jpeg)
+In this guide, we will walk through the steps to create a basic web application using **Next.js**, a powerful framework for building server-side rendered React applications.
 
-Hiroshima is a decent place 
+## Step 1: Install Node.js and npm
+
+Make sure you have Node.js installed on your machine. You can download it from the official [Node.js website](https://nodejs.org/). npm comes bundled with Node.js, so it will be installed automatically.
+
+You can check if Node.js and npm are installed by running the following commands in your terminal:
+
+```bash
+node -v
+npm -v
+```
+
+## Step 2: Create a Next.js Project
+
+To create a new Next.js project, you can use create-next-app, which sets up a Next.js project with everything you need.
+
+Run the following command in your terminal:
+
+```bash
+npx create-next-app@latest my-next-app
+```
+
+## Step 3:  Run the Development Server
+
+Navigate into your project directory and start the development server by running:
+
+```bash
+cd my-next-app
+npm run dev
+```
+
+The app will be available at http://localhost:3000. Open this URL in your browser, and you should see the Next.js welcome page.
+
+## Step 4: Modify the Pages
+
+Next.js uses a file-based routing system. The `pages` directory contains different pages of your app.
+
+You can modify `pages/index.js` to customize the home page. For example:
+
+```jsx
+export default function Home() {
+  return (
+    <div>
+      <h1>Welcome to My First Next.js App</h1>
+      <p>This is a simple web application created with Next.js.</p>
+    </div>
+  );
+}
+```
+
+Save the file and refresh your browser to see the updated page.
+
