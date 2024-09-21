@@ -6,16 +6,16 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "volunteer-network.com",
-		template: "%s | volunteer-network.com",
+		default: "keccap256.com",
+		template: "%s | keccap256.com",
 	},
-	description: "Non Profit Organization at Hiroshima Prefecture",
+	description: "keccap256's portfolio",
 	openGraph: {
-		title: "volunteer-network.com",
+		title: "keccap256.com",
 		description:
-			"Non Profit Organization at Hiroshima Prefecture",
-		url: "https://volunteer-network.com",
-		siteName: "volunteer-network.com",
+			"keccap256's portfolio",
+		url: "https://keccap256.com",
+		siteName: "keccap256.com",
 		locale: "en-US",
 		type: "website",
 	},
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Volunteer Network",
+		title: "keccap256",
 		card: "summary_large_image",
 	},
 	icons: {

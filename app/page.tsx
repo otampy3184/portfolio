@@ -148,7 +148,7 @@ export default function Home() {
 							</a>
 						</div>
 					</div>
-					<div className="py-8 text-center text-sm text-white">© 2023 - Present Volunteer Network. All rights reserved.</div>
+					<div className="py-8 text-center text-sm text-white">© 2023 - Present Hiroshi Takagi. All rights reserved.</div>
 				</footer>
 			</div>
 		</div>
