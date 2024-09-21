@@ -12,13 +12,14 @@ export default function About() {
 						About me
 					</h2>
 					<p className="mt-4 text-zinc-200 text-xl">
-					About me
+					Hiroshi Takagi alias keccap256
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-400" />
-                <p className="mt-4 text-zinc-100 text-base">
-					京都在住のソフトウェアエンジニアです
-				</p>
+				<img src="memes/somethingOf.jpg" alt="My Image" className="mt-8 mx-auto rounded-lg" />
+                {/* <p className="mt-4 text-zinc-100 text-base">
+					Wait, you guys are actually engineering?
+				</p> */}
             </div>
         </div>
     )
