@@ -1,5 +1,5 @@
 ---
-title: How to Build a Simple Web Application with Next.js
+title: How to mint a NFT to Ethereum.
 description: A step-by-step guide to create a basic web application using Next.js
 date: "2024-09-22"
 url: https://example.com
@@ -31,23 +31,23 @@ Openzeppelin Contract v4.6.0
 ## 環境整備
 truffleはSolidity開発用のフレームワークで、Solidityのコンパイルからデプロイ、テストまでが簡単に実行できるツールです
 npmでグローバルにインストールしていきます
-```
-$ npm install -g truffle
+```bash
+npm install -g truffle
 ```
 
 適当に作業ディレクトリを作成し、truffle initを使ってSolidityプロジェクトのひな形を作成します
-```
-$ truffle init 
+```bash
+truffle init 
 ```
 
 Ethereumとの接続にはHDWallet Providerと呼ばれるパッケージを使います。npmでインストールしていきます
-```
-$ npm install @truffle/hdwallet-provider
+```bash
+npm install @truffle/hdwallet-provider
 ```
 
 NFTとしてはERC721規格に沿ったコントラクトを使います。Openzeppelinというコントラクト群を。npmでインストールする
-```
-$ npm install @openzeppelin/contracts
+```bash
+npm install @openzeppelin/contracts
 ```
 
 EthereumのRinkebyネットワークに接続するためにtruffle-config.jsを編集する
@@ -84,8 +84,8 @@ module.exports = {
 
 この状態で一度truffle consoleを試し、問題なく接続できたら環境はOK
 以下は成功例
-```
-$ truffle console --network rinkeby
+```bash
+truffle console --network rinkeby
 truffle(rinkeby)>
 ```
 
@@ -130,8 +130,8 @@ contract AvatarNFT is ERC721, Ownable {
 ```
 
 作成したコントラクトをコンパイルする
-```
-$ truffle compile
+```bash
+truffle compile
 ```
 成功した場合はbuildフォルダができて、中にコントラクトのABI情報の入ったjsonファイルが生成される
 
@@ -148,14 +148,14 @@ module.exports = function (deployer) {
 ```
 
 migrationファイルを使ってコントラクトを実際にmigrateする
-```
-$ truffle migrate --network rinkeby
+```bash
+truffle migrate --network rinkeby
 ```
 
 migrateしたコントラクトを操作し、トークンをMintする
 truffle console上ではWeb3.jsを使ってコントラクトと繋がるため、javascript形式で指示を入力する
-```
-$ truffle console --network rinkeby
+```bash
+truffle console --network rinkeby
 truffle(rinkeby)> const AvatarContract = await AvatarNFT.deployed()
 undifined
 truffle(rinkeby)> AvatarContract.address
@@ -173,7 +173,7 @@ truffle(rinkeby)> AvatarContract.safeMint("<MetamaskのRinkeby側のアドレス
 URLはhttps://testnets.opensea.io/assets/
 
 ## 【補足】migrate以降の実行例 
-```
+```bash
 @DESKTOP-PN1Q84A MINGW64 ~/MyProject/dapp/a
 $ truffle migration --network rinkeby --reset
 
