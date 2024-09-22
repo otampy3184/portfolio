@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, Eye, Github, Twitter } from "lucide-react";
+import { ArrowLeft, Eye, Github, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -43,7 +43,7 @@ export const Header: React.FC<Props> = ({ post, views }) => {
 	return (
 		<header
 			ref={ref}
-			className="relative isolate overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black"
+			className="relative isolate overflow-hidden bg-gradient-to-tr to-blue-500 from-green-500"
 		>
 			<div
 				className={`fixed inset-x-0 top-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-b lg:bg-transparent ${
@@ -67,8 +67,8 @@ export const Header: React.FC<Props> = ({ post, views }) => {
 								views,
 							)}
 						</span>
-						<Link target="_blank" href="https://twitter.com">
-							<Twitter
+						<Link target="_blank" href="https://www.linkedin.com/in/hiroshi-t-770633229/">
+							<Linkedin
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
 										? " text-zinc-400 hover:text-zinc-100"
