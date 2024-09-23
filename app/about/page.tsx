@@ -15,6 +15,13 @@ export default function About() {
                     <p className="mt-4 text-zinc-200 text-xl">
                         Hiroshi Takagi alias keccap256
                     </p>
+                    <Image
+                        src="/images/me.jpg"
+                        alt="My Image"
+                        width={500}
+                        height={500}
+                        className="mt-8 mx-auto rounded-lg"
+                    />
                 </div>
 
                 {/* 章立て開始 */}
