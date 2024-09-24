@@ -5,7 +5,7 @@ import Image from "next/image";  // 追加
 
 export default function About() {
     return (
-        <div className="w-screen h-full bg-gradient-to-tr to-blue-500 from-green-500">
+        <div className="w-screen h-full bg-gradient-to-tr to-blue-500 from-blue-400">
             <Navigation />
             <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
                 <div className="max-w-2xl mx-auto lg:mx-0">
@@ -16,7 +16,7 @@ export default function About() {
                         Hiroshi Takagi alias keccap256
                     </p>
                     <Image
-                        src="/images/me.jpg"
+                        src="/images/me.JPG"
                         alt="My Image"
                         width={500}
                         height={500}

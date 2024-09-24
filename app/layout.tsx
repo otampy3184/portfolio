@@ -62,6 +62,12 @@ export default function RootLayout({
 				className={`bg-black ${
 					process.env.NODE_ENV === "development" ? "debug-screens" : undefined
 				}`}
+				style={{
+					backgroundImage: 'url("/images/bird.jpg")',
+					backgroundSize: 'cover',
+					backgroundPosition: 'center',
+					backgroundRepeat: 'no-repeat',
+				}}
 			>
 				{children}
 			</body>
