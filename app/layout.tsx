@@ -60,7 +60,7 @@ export default function RootLayout({
 				<link
 					rel="preload"
 					as="image"
-					href="/path/to/your/image.jpg"
+					href="/images/bird.jpg"
 				/>
 			</head>
 			<body
