@@ -57,11 +57,15 @@ export default function RootLayout({
 		<html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
 			<head>
 				<Analytics />
+				<link
+					rel="preload"
+					as="image"
+					href="/path/to/your/image.jpg"
+				/>
 			</head>
 			<body
-				className={`bg-black ${
-					process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-				}`}
+				className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+					}`}
 				style={{
 					backgroundImage: 'url("/images/bird.jpg")',
 					backgroundSize: 'cover',
