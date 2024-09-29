@@ -21,7 +21,7 @@ export default async function BlogPage() {
 		return acc;
 	}, {} as Record<string, number>);
 
-	const featured = allPosts.find((post) => post.slug === "testPost")!;
+	const featured = allPosts.find((post) => post.slug === "NFTonEthereum")!;
 	// const top2 = allPosts.find((project) => project.slug === "planetfall")!;
 	// const top3 = allPosts.find((project) => project.slug === "highstorm")!;
 	const sorted = allPosts
